@@ -5,6 +5,7 @@
     "no-param-reassign": "off",
     "no-console": ["error", { "allow": ["warn", "error", "info"] }],
     "no-underscore-dangle": "off",
-    "no-new": "off"
+    "no-new": "off",
+    "max-len": "off"
   }
 }

@@ -29,12 +29,9 @@ const sourceCount = 4;
  * Call 'printer.done()' at the end to get a few stats on your solution!
  */
 
-const syncLogSources = [];
-for (let i = 0; i < sourceCount; i++) {
-	syncLogSources.push(new LogSource())
-}
+/*const syncLogSources = Array.from(Array(sourceCount)).map(count => new LogSource());
 
-// require('./solution/sync-sorted-merge')(syncLogSources, new Printer());
+require('./solution/sync-sorted-merge')(syncLogSources, new Printer());*/
 
 /**
  * Challenge Number 2!
@@ -44,11 +41,7 @@ for (let i = 0; i < sourceCount; i++) {
  * or boolean false once the LogSource has ended.
  */
 
-const asyncLogSources = [];
-
-for (let i = 0; i < sourceCount; i++) {
-	asyncLogSources.push(new LogSource())
-}
+const asyncLogSources = Array.from(new Array(sourceCount)).map(count => new LogSource());
 
 require('./solution/async-sorted-merge')(asyncLogSources, new Printer());
 
