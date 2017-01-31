@@ -1,0 +1,35 @@
+{
+  "name": "interviews",
+  "version": "0.1.0",
+  "description": "BC Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BuildingConnected/interviews.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/BuildingConnected/interviews/issues"
+  },
+  "homepage": "https://github.com/BuildingConnected/interviews",
+  "dependencies": {
+    "Faker": "~0.7.0",
+    "bluebird": "^3.4.1",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2"
+  },
+  "ava": {
+    "files": [
+      "**/*.spec.js"
+    ],
+    "failFast": true,
+    "tap": false
+  }
+}
